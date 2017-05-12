@@ -3,6 +3,7 @@ package myprograminglab;
 /*
  * Write a program that displays Welcome to Java,
  * Welcome to Computer Science, and Programming is fun.
+ * Lesson 1.1
  */
 
 /**
