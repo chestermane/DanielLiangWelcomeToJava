@@ -1,5 +1,6 @@
 /*
  * Write a program that displays Welcome to Java five times.
+ * Lesson 1.2
  */
 
 /**
