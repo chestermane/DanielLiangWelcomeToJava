@@ -1,5 +1,5 @@
 /*
- * Write a program that displays Welcome to Java five times.
+ * Write a program that displays the following pattern.
  */
 
 /**
