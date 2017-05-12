@@ -1,5 +1,6 @@
 /*
  * Write a program that displays the following pattern.
+ * Lesson 1.3
  */
 
 /**
