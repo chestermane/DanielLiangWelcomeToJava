@@ -1,0 +1,31 @@
+/*
+ * (Find the number of years) Write a program that prompts the user to enter the
+ * minutes (e.g., 1 billion), and displays the number of years and days for the 
+ * minutes. For simplicity, assume a year has 365 days. Here is a sample run:
+ */
+package findNumberOfyears;
+
+import java.util.Scanner;
+
+public class FindNumberOfYears {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number of minutes you would like convert");
+        double minutes = input.nextDouble();
+        conversion(minutes);
+
+    }
+
+    public static void conversion(double minutes) {
+        int minutesInDay = 1440;
+        int days = (int) minutes / minutesInDay;
+        int years = days / 365;
+
+        System.out.println("There are" + " " + days + " days " + "in" + " "
+                + (int)minutes + " minutes");
+        System.out.println("There is" + " " + years + " day(s) " + "in" + " "
+                + (int)minutes + " minutes");
+    }
+
+}
