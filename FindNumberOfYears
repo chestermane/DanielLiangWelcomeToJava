@@ -3,29 +3,32 @@
  * minutes (e.g., 1 billion), and displays the number of years and days for the 
  * minutes. For simplicity, assume a year has 365 days. Here is a sample run:
  */
-package findNumberOfyears;
+package javaapplication7;
 
 import java.util.Scanner;
 
-public class FindNumberOfYears {
+public class JavaApplication7 {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number of minutes you would like convert");
-        double minutes = input.nextDouble();
+        int minutes = input.nextInt();
         conversion(minutes);
 
     }
 
-    public static void conversion(double minutes) {
+    public static void conversion(int minutes) {
         int minutesInDay = 1440;
-        int days = (int) minutes / minutesInDay;
+        int days = minutes / minutesInDay;
         int years = days / 365;
+        int daysRemaining = days % 365;
 
         System.out.println("There are" + " " + days + " days " + "in" + " "
-                + (int)minutes + " minutes");
-        System.out.println("There is" + " " + years + " day(s) " + "in" + " "
-                + (int)minutes + " minutes");
+                + (int) minutes + " minutes");
+        System.out.println("There are" + " " + years + " years " + "and "
+                + daysRemaining + " days" + " in" + " " + (int) minutes
+                + " minutes");
+
     }
 
 }
